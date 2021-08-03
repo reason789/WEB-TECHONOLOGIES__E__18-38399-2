@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+	<style>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		  
+		}
+		.frontNav{
+		  
+		}
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #ff6666;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #fff;
+		  color: black;
+		  transition: .5s;
+		}
+		
+		.topnav a.active {
+		  background-color: #ff6666;
+		  color: white;
+		  font-size: 30px;
+		  padding: 7px 20px;
+		}
+		.rightNav{
+			float:right;
+			padding:0 20px;
+		}
+		.copyright{
+				background-color: #333333;
+				color: #fff;
+				padding: 20px;
+				margin-top: 20px;
+			}
+		</style>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="loginStyle.css">
+</head>
+<body>
+
+	<div class="topnav">
+        <div class="frontNav">
+            <a class="active" href="#news">Kena <span style="color:black">Kata</span></a>
+        </div>
+        <a style=""></a>
+        <a href="#home">Home</a>
+        <a href="#news">Men</a>
+        <a href="#contact">Women</a>
+        <a href="#about">Kids</a>
+        <a href="#about">Sports</a>
+        <a href="#about">Digital</a>
+        <div class="rightNav">
+            <a href="#news">My Account</a>
+            <a href="#news">My Cart</a>
+            <a href="#news">Checkout</a>
+            <a href="#news">Login</a>
+        </div>
+    </div>
+
+<form name="myform" method="post" action="" onsubmit="validateform()" >  
+  <div class="imgcontainer">
+    <img src="user.png"  alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Name</b></label>
+    <input type="text" placeholder="Name" name="name" id="name" onkeyup="checkName()" onblur="checkName()"><span id="nameErr"></span><br>
+
+	<label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Email" name="email" id="email" onkeyup="checkEmail()" onblur="checkEmail()"><span id="emailErr"></span><br>
+
+	<label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Username" name="username" id="username" onkeyup="checkUsername()" onblur="checkUsername()"><span id="usernameErr"></span><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Password" name="password" id="password" onkeyup="checkPass()" onblur="checkPass()"><span id="passErr"></span><br>
+
+	<label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm password" name="conPassword" id="conPassword" onkeyup="confirmPassword()" onblur="confirmPassword()"><span id="conPassErr"></span><br>
+        
+    <button type="submit" >Submit</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <span class="psw"> <a href="#"> Forgot password?</a></span>
+  </div>
+</form>
+
+<footer>
+	<div class="copyright">
+	  <p class="txt">&copy 2021  E-Commecre</p>
+	</div>
+  </footer>
+</body>
+</html>
